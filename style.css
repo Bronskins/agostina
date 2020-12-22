@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(20, 50px);
+    grid-template-areas: "a a a a";
+    justify-content: center;
+    border: 5px solid rgb(136, 29, 29);
+    background-color: rgb(12, 3, 136);
+    animation-name: lol2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.grid1{
+    background-color: rgb(57, 55, 168);
+    transition: 0.1s;
+    height: 50px;
+    animation-name: lol3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes lol {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+
+@keyframes lol2{
+    from {background-color: rgb(57, 55, 168);}
+    to {background-color: pink;}
+
+}
+
+@keyframes lol3{
+    from {background-color: rgb(57, 55, 168);}
+    to {background-color: white;}
+}
+.grid2{
+    animation-name: lol;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    grid-area: "a";
+}
+
+.grid2:hover{
+    background-color: blue;
+    border: solid 1px blue;
+}
